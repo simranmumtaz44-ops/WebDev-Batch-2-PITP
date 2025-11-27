@@ -1,0 +1,62 @@
+.static-box{
+    background-color:lightblue;
+    color:aliceblue;
+    padding: 20px;
+    border: 2px solid black;
+    /*even if you set these, they wont move the box*/
+    position: status;
+}
+.relative-box{
+    background-color:aquamarine;
+    color:azure;
+    padding: 20px;
+    border: 2px solid silver;
+    position: relative;
+    /*move 30 px down from its original top edge and 20px right*/
+}
+.normal-box{
+    background-color:blanchedalmond;
+     padding: 20px;
+    border: 2px solid grey;
+    /*this box does not move up to fill the relative box original spot*/
+}
+.parent-relative{
+    background-color:bisque;
+     padding: 50px;
+    border: 3px dashed black;
+    height:200px;
+    position: relative;
+}
+.absolute-box{
+    background-color:azure;
+    color:blanchedalmond;
+     padding: 10px;
+    border: 2px solid black;
+    width:100px;
+    position: absolute;
+    /* 2. position relativeto top-right corner of parent */
+    top:10px;
+    right:10px
+}
+.absolute-box2{
+    position:absolute;
+    background-color:blue;
+    left:10px;
+    top:10px;
+    width:100px;
+    height:100px;
+    border: 2px solid green 
+}
+.fixed-box{
+    background-color: black;
+    color: beige;
+    padding:15px;
+    width:100%;/*spans the full width of the viewport*/
+    text-align:center;
+
+    position: fixed;
+    /*locks it to the bottom of the browser window*/
+    bottom: 0;
+    right: 0;
+    z-index: 1000;/* ensure it stays on the top of other content*/
+}

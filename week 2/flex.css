@@ -1,0 +1,30 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: linen;
+    border: 0cap;
+}
+.div1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    background-color: lightgreen;
+    border: solid2px purple;
+}
+
+.div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    background-color: lightskyblue;
+    border: solid2px orange
+}

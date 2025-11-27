@@ -1,0 +1,158 @@
+/*general rerset and styling*/
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+body{
+    background-color: lightseagreen;
+    padding: 20px;
+
+}
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+    color: black;
+}
+hr{
+    margin: 40px 0;
+    border: 0;
+    border-top: 1px solid grey;
+
+}
+.demo-section{
+    background-color: violet;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.resize-box{
+    background-color: coral;
+    color: white;
+    padding: 20px;
+    border: 2px solid darkred;
+    resize: both;
+    overflow: auto;
+}
+.center-box{
+    background-color: darkorange;
+    color: white;
+    padding: 20px;
+    border: 2px solid darkred;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.status-box{
+    background-color: cadetblue;
+    color:aliceblue;
+    padding: 20px;
+    border: 2px solid black;
+    /*even if you set these, they wont move the box*/
+    position: static;
+}
+.offset-box{
+    background-color:chocolate;
+    color:cornsilk;
+    padding: 20px;
+    border: 2px solid maroon;
+    position: relative;
+    /*move 30 px down from its original top edge and 20px right*/
+    top:30px;
+    left:20px;
+}
+.flow-box{
+    background-color:darkcyan;
+     padding: 20px;
+    border: 2px solid grey;
+    /*this box does not move up to fill the relative box original spot*/
+}
+.parent-relative{
+    background-color:darkgoldenrod;
+     padding: 50px;
+    border: 3px dashed black;
+    height:200px;
+    position: relative;
+}
+.absolute-box{
+    background-color:darkblue;
+    color:deepskyblue;
+     padding: 10px;
+    border: 2px solid black;
+    width:100px;
+    position: absolute;
+    /* 2. position relativeto top-right corner of parent */
+    top:10px;
+    right:10px
+}
+.absolute-box2{
+    position:absolute;
+    background-color:darkgreen;
+    left:10px;
+    top:10px;
+    width:100px;
+    height:100px;
+    border: 2px solid green 
+}
+.fixed-box{
+    background-color: dimgray;
+    color: beige;
+    padding:15px;
+    width:100%;/*spans the full width of the viewport*/
+    text-align:center;
+
+    position: fixed;
+    /*locks it to the bottom of the browser window*/
+    bottom: 0;
+    right: 0;
+}
+.hidden-overflow{
+    background-color:darkred;
+    color: white;
+    padding:20px;
+    width:300px;
+    height:100px;
+    border:2px solid black;
+    overflow: hidden; /*hides overflow content*/
+}
+.scroll-overflow{
+    background-color:darkslateblue;
+    color: white;
+    padding:20px;
+    width:300px;
+    height:100px;
+    border:2px solid black;
+    overflow: scroll; /*adds scrollbars for overflow content*/
+}
+.auto-overflow{
+    background-color:darkslategray;
+    color: white;
+    padding:20px;
+    width:300px;
+    height:100px;
+    border:2px solid black;
+    overflow: auto; /*adds scrollbars only when necessary*/
+}
+.visible-overflow{
+    background-color:darkslategrey;
+    color: white;
+    padding:20px;
+    width:300px;
+    height:100px;
+    border:2px solid black;
+    overflow: visible; /*allows overflow content to be visible*/
+}
+.scrollbar-style{
+    background-color:darkviolet;
+    color: white;
+    padding:20px;
+    width:300px;
+    height:100px;
+    border:2px solid black;
+    overflow: auto; /*adds scrollbars only when necessary*/
+}
+
