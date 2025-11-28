@@ -28,24 +28,20 @@ hr{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .resize-box{
-    background-color: coral;
-    color: white;
-    padding: 20px;
-    border: 2px solid darkred;
-    resize: both;
-    overflow: auto;
-}
-.center-box{
-    background-color: darkorange;
+    background-color: darksalmon;
     color: white;
     padding: 20px;
     border: 2px solid darkred;
     width: 200px;
     height: 200px;
-    margin: auto;
+    resize: both; /*allows resizing both horizontally and vertically*/
+    overflow: auto; /*adds scrollbars if content overflows*/
+}
+.flex-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: darkorchid;
+    padding: 20px;
+    border: 2px solid indigo;
 }
 .status-box{
     background-color: cadetblue;
@@ -130,24 +126,6 @@ hr{
 }
 .auto-overflow{
     background-color:darkslategray;
-    color: white;
-    padding:20px;
-    width:300px;
-    height:100px;
-    border:2px solid black;
-    overflow: auto; /*adds scrollbars only when necessary*/
-}
-.visible-overflow{
-    background-color:darkslategrey;
-    color: white;
-    padding:20px;
-    width:300px;
-    height:100px;
-    border:2px solid black;
-    overflow: visible; /*allows overflow content to be visible*/
-}
-.scrollbar-style{
-    background-color:darkviolet;
     color: white;
     padding:20px;
     width:300px;
