@@ -1,62 +1,52 @@
-.static-box{
-    background-color:lightblue;
-    color:aliceblue;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:lightpink;
+    color: white;
+}
+img{
+    border-radius: 50px;
+    border: 2px solid white;
+}
+main{
+    display: flex;
+    flex-direction: column;
     padding: 20px;
-    border: 2px solid black;
-    /*even if you set these, they wont move the box*/
-    position: status;
+    gap: 20px;
 }
-.relative-box{
-    background-color:aquamarine;
-    color:azure;
-    padding: 20px;
-    border: 2px solid silver;
+p{
+    font-size: 12px;
+    text-align: justify;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+h1{
+    font-size: 24px;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: lightgray;
+    color:black;
     position: relative;
-    /*move 30 px down from its original top edge and 20px right*/
-}
-.normal-box{
-    background-color:blanchedalmond;
-     padding: 20px;
-    border: 2px solid grey;
-    /*this box does not move up to fill the relative box original spot*/
-}
-.parent-relative{
-    background-color:bisque;
-     padding: 50px;
-    border: 3px dashed black;
-    height:200px;
-    position: relative;
-}
-.absolute-box{
-    background-color:azure;
-    color:blanchedalmond;
-     padding: 10px;
-    border: 2px solid black;
-    width:100px;
-    position: absolute;
-    /* 2. position relativeto top-right corner of parent */
-    top:10px;
-    right:10px
-}
-.absolute-box2{
-    position:absolute;
-    background-color:blue;
-    left:10px;
-    top:10px;
-    width:100px;
-    height:100px;
-    border: 2px solid green 
-}
-.fixed-box{
-    background-color: black;
-    color: beige;
-    padding:15px;
-    width:100%;/*spans the full width of the viewport*/
-    text-align:center;
-
-    position: fixed;
-    /*locks it to the bottom of the browser window*/
     bottom: 0;
-    right: 0;
-    z-index: 1000;/* ensure it stays on the top of other content*/
+    width: 100%;
 }
