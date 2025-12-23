@@ -1,0 +1,295 @@
+/* ------------------------- GENERAL RESET ------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ------------------------- BODY ------------------------- */
+body {
+  background-color: #1e1e2f; /* dark gray/navy tone instead of pure black */
+  color: white; /* bright text */
+  line-height: 1.6;
+}
+
+/* ------------------------- HEADER ------------------------- */
+header {
+  text-align: center;
+  padding: 20px;
+  background: url('Untitled\ design.png') no-repeat center center/cover;
+  color: gold; /* golden highlight */
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  text-size-adjust: calc(bold);
+}
+
+header-content {
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+header p {
+  font-size: 2.1em;
+  margin-bottom: 10px;
+  color:#1e1e2f
+}
+
+nav a {
+  color: white; /* golden links */
+  margin: 0 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* ------------------------- HERO SECTION ------------------------- */
+#home {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#home img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+/* ------------------------- SECTIONS ------------------------- */
+section {
+  padding: 50px 20px;
+  background-color: #2a2a3d; /* slightly lighter dark section */
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+/* ------------------------- ACCORDION ------------------------- */
+.accordion {
+  background-color: #34344f;
+  color: #ffd700;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 1.1em;
+  transition: 0.3s;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.accordion:hover, .accordion.active {
+  background-color: #4b4b67;
+}
+
+.panel {
+  background-color: #3c3c5c;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+  padding-left: 15px;
+  border-left: 3px solid #ffd700;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #eee;
+}
+
+/* ------------------------- GRID CARDS ------------------------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #3c3c5c;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+.card h3 {
+  color: #ffd700;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 0.95em;
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.5);
+}
+
+/* ------------------------- BUTTONS ------------------------- */
+button.bookBtn {
+  background-color: #ffd700;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+  color: #1e1e2f;
+}
+
+button.bookBtn:hover {
+  background-color: #e6c200;
+}
+
+/* ------------------------- SERVICES ------------------------- */
+#services ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#services li {
+  background-color: #34344f;
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 5px;
+  color: #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ------------------------- CONTACT ------------------------- */
+.contact-info, .contact-form {
+  background-color: #34344f;
+  padding: 20px;
+  border-radius: 10px;
+  color: #eee;
+}
+
+.contact-info iframe {
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 100%;
+  height: 250px;
+  border: 0;
+}
+
+/* ------------------------- FORM ------------------------- */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #2a2a3d;
+  border: 1px solid #4b4b67;
+  color: #fff;
+  border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+  border-color: #ffd700;
+  outline: none;
+}
+
+/* ------------------------- MODAL ------------------------- */
+#bookingModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(42,42,61,0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  overflow-y: auto;
+}
+
+.modal-content {
+  background-color: #3c3c5c;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  color: #eee;
+}
+
+#closeBooking {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #ffd700;
+}
+
+/* ------------------------- FOOTER ------------------------- */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2a2a3d;
+  border-top: 1px solid #4b4b67;
+  color: #eee;
+  font-size: 0.95em;
+}
+
+footer a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+/* ------------------------- RESPONSIVE ------------------------- */
+@media(max-width:768px){
+  nav a{
+    display:block;
+    margin:10px 0;
+  }
+
+  .contact-info, .contact-form{
+    min-width: 100%;
+  }
+}
+header h2 span {
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 20px;
+  padding:10px ;
+  color: white;
+}
+
+.panel {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s ease;
+}
+.panel.open {
+  max-height: 500px; /* adjust as needed */
+}
+.header-content {
+  text-align: center; /* Logo center me laane ke liye */
+  padding: 10px 0;
+}
+
+

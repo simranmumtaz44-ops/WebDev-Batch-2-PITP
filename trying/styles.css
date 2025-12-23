@@ -1,0 +1,186 @@
+/* ===== Google Font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+body{
+  background:#f5f7fa;
+  color:#333;
+  line-height:1.6;
+}
+
+/* ===== HEADER ===== */
+header{
+  background:linear-gradient(90deg,#0a6cf1,#00b4db);
+  color:white;
+  padding:30px;
+  text-align:center;
+}
+
+header h1{
+  font-size:36px;
+  margin-bottom:10px;
+}
+
+header nav a{
+  color:white;
+  margin:0 10px;
+  text-decoration:none;
+  font-weight:500;
+}
+
+header nav a:hover{
+  text-decoration:underline;
+}
+
+/* ===== HERO SECTION ===== */
+#hero{
+  height:80vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e')
+    center/cover no-repeat;
+  color:white;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+}
+
+#hero h2{
+  font-size:42px;
+  margin-bottom:10px;
+}
+
+#hero p{
+  font-size:18px;
+}
+
+/* ===== SECTIONS ===== */
+section{
+  padding:60px 10%;
+  margin-bottom:30px;
+  background:white;
+  border-radius:15px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+section h2{
+  text-align:center;
+  margin-bottom:30px;
+  color:#0a6cf1;
+}
+
+/* ===== LISTS ===== */
+ul{
+  list-style:none;
+}
+
+ul li{
+  background:#eef3ff;
+  margin:10px 0;
+  padding:12px;
+  border-radius:10px;
+}
+
+/* ===== FAMOUS & HISTORICAL ===== */
+h3{
+  margin-top:25px;
+  color:#333;
+}
+
+/* ===== TABLE (TRIPS) ===== */
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:20px;
+}
+
+table th{
+  background:#0a6cf1;
+  color:white;
+  padding:12px;
+}
+
+table td{
+  padding:12px;
+  text-align:center;
+  background:#f9f9f9;
+}
+
+table tr:hover td{
+  background:#eef3ff;
+}
+
+/* ===== PACKAGES ===== */
+#packages h3{
+  background:#0a6cf1;
+  color:white;
+  padding:10px;
+  border-radius:10px;
+  margin-top:25px;
+}
+
+#packages p{
+  margin-left:15px;
+  margin-top:5px;
+}
+
+/* ===== SERVICES ===== */
+#services ul li{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+/* ===== CONTACT FORM ===== */
+form{
+  max-width:500px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+}
+
+form input, form textarea{
+  padding:12px;
+  margin:8px 0;
+  border-radius:10px;
+  border:1px solid #ccc;
+  font-size:14px;
+}
+
+form textarea{
+  resize:none;
+  height:100px;
+}
+
+form button{
+  background:#0a6cf1;
+  color:white;
+  border:none;
+  padding:12px;
+  border-radius:25px;
+  cursor:pointer;
+  margin-top:10px;
+  font-size:16px;
+}
+
+form button:hover{
+  background:#084bb5;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#0a6cf1;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+}

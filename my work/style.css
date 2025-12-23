@@ -1,0 +1,173 @@
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ===== Header ===== */
+header{
+  background:#0a6cf1;
+  color:white;
+  padding:15px;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+header a{
+  color:white;
+  margin:0 15px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+header a:hover{
+  text-decoration:underline;
+}
+
+/* ===== Hero Section ===== */
+.hero{
+  height:90vh;
+  background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e')
+  center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:50px;
+  background:rgba(0,0,0,0.5);
+  padding:20px;
+  border-radius:10px;
+}
+
+/* ===== Sections ===== */
+section{
+  padding:50px;
+}
+
+section h2{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+/* ===== Destination Cards ===== */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+  gap:20px;
+}
+
+.card{
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 4px 8px rgba(0,0,0,0.2);
+  transition:0.3s;
+  position:relative;
+  background:white;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 8px 16px rgba(0,0,0,0.3);
+}
+
+.card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.badge{
+  position:absolute;
+  top:10px;
+  left:10px;
+  background:red;
+  color:white;
+  padding:5px 10px;
+  border-radius:20px;
+  font-size:12px;
+}
+
+.card-content{
+  padding:15px;
+}
+
+.card-content h3{
+  margin-top:0;
+}
+
+.card-content p{
+  font-size:14px;
+  color:#444;
+}
+
+.card-content button{
+  padding:10px 15px;
+  background:#0a6cf1;
+  color:white;
+  border:none;
+  border-radius:20px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.card-content button:hover{
+  background:#084bb5;
+  transform:scale(1.05);
+}
+
+/* ===== Travel Tips ===== */
+.tips{
+  display:flex;
+  justify-content:space-around;
+  text-align:center;
+}
+
+.tips div{
+  font-size:18px;
+  background:#f2f2f2;
+  padding:20px;
+  border-radius:12px;
+  width:30%;
+}
+
+/* ===== Contact Form ===== */
+form{
+  max-width:400px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+input, textarea{
+  padding:10px;
+  border-radius:8px;
+  border:1px solid #ccc;
+  font-size:14px;
+}
+
+form button{
+  background:#0a6cf1;
+  color:white;
+  border:none;
+  padding:12px;
+  border-radius:20px;
+  cursor:pointer;
+}
+
+form button:hover{
+  background:#084bb5;
+}
+
+/* ===== Footer ===== */
+footer{
+  background:#0a6cf1;
+  color:white;
+  text-align:center;
+  padding:15px;
+}
