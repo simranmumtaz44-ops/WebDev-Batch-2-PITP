@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us | FitLife Gym</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container">
+    <h2 class="logo">FitLife Gym</h2>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="classes.html">Classes</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <h1>Contact Us</h1>
+  <p>Get in touch with FitLife Gym</p>
+</section>
+
+<!-- CONTACT FORM -->
+<section class="light-section">
+  <h2>Send Us a Message</h2>
+
+  <form class="contact-form" onsubmit="return contactValidate()">
+    <input type="text" id="cname" placeholder="Your Name">
+    <small id="cnameError"></small>
+
+    <input type="email" id="cemail" placeholder="Your Email">
+    <small id="cemailError"></small>
+
+    <textarea id="cmessage" placeholder="Your Message"></textarea>
+    <small id="cmsgError"></small>
+
+    <button type="submit" class="btn-primary">Send Message</button>
+  </form>
+</section>
+
+<!-- CONTACT INFO -->
+<section class="dark-section">
+  <h2>Contact Information</h2>
+  <p>📍 Lahore, Pakistan</p>
+  <p>📞 +92 300 1234567</p>
+  <p>✉ info@fitlifegym.com</p>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2026 FitLife Gym & Fitness Club</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+    padding: 20px;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    backdrop-filter: blur(6px);
+    max-width: 400px;
+    margin: auto;
+}
+
+.header h1 {
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.header input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #1e293b;
+    color: #fff;
+}
+
+.header input::placeholder {
+    color: #94a3b8;
+}
+
+.header button {
+    padding: 10px 15px;
+    margin-left: 5px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: #0f172a;
+    transition: 0.3s;
+}
+
+.header button:hover {
+    transform: scale(1.05);
+}
+
+/* ================= MAIN ================= */
+
+main {
+    margin-top: 30px;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ================= CURRENT WEATHER ================= */
+
+.weather {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 20px;
+    border-radius: 15px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.weather h2 {
+    margin-bottom: 10px;
+}
+
+.temp-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.temp-box img {
+    width: 60px;
+}
+
+#temperature {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#clouds {
+    font-size: 14px;
+    color: #cbd5f5;
+}
+
+/* ================= DIVIDER ================= */
+
+.divider1,
+.divider2 {
+    width: 2px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 5px;
+}
+
+/* ================= HOURLY FORECAST ================= */
+
+.forecstH {
+    background: rgba(0, 0, 0, 0.45);
+    padding: 20px;
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.cast-header {
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.templist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.next {
+    background: rgba(255,255,255,0.08);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.next .time {
+    font-size: 13px;
+    color: #93c5fd;
+}
+
+.next .desc {
+    font-size: 13px;
+    color: #e0f2fe;
+}
+
+/* ================= WEEK FORECAST ================= */
+
+.forecstD {
+    margin-top: 30px;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.weekF {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.dayF {
+    background: rgba(255,255,255,0.08);
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.dayF .date {
+    font-size: 13px;
+    color: #93c5fd;
+    margin-bottom: 5px;
+}
+
+.dayF .desc {
+    font-size: 14px;
+    color: #e0f2fe;
+}

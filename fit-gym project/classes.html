@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Page title -->
+  <title>Classes | FitLife Gym</title>
+
+  <!-- Mobile responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Main CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HEADER / NAVBAR ================= -->
+<header class="navbar">
+  <h2 class="logo">FitLife Gym</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="classes.html">Classes</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+
+<!-- ================= CLASSES HERO ================= -->
+<section class="light-section">
+  <h2>Our Training Classes</h2>
+  <p>Select a category to explore classes</p>
+</section>
+
+
+<!-- ================= FILTER BUTTONS ================= -->
+<section class="light-section">
+  <div class="filter-buttons">
+    <button onclick="filterClasses('all')">All</button>
+    <button onclick="filterClasses('cardio')">Cardio</button>
+    <button onclick="filterClasses('strength')">Strength</button>
+    <button onclick="filterClasses('flexibility')">Flexibility</button>
+  </div>
+</section>
+
+
+<!-- ================= CLASSES CARDS ================= -->
+<section class="light-section">
+  <div class="cards">
+
+    <!-- Cardio -->
+    <div class="class-card cardio">
+      <h3>HIIT Training</h3>
+      <p>High intensity cardio workout</p>
+    </div>
+
+    <div class="class-card cardio">
+      <h3>Zumba</h3>
+      <p>Fun dance cardio session</p>
+    </div>
+
+    <!-- Strength -->
+    <div class="class-card strength">
+      <h3>Weight Training</h3>
+      <p>Build muscle and strength</p>
+    </div>
+
+    <div class="class-card strength">
+      <h3>CrossFit</h3>
+      <p>Advanced strength & endurance</p>
+    </div>
+
+    <!-- Flexibility -->
+    <div class="class-card flexibility">
+      <h3>Yoga</h3>
+      <p>Improve flexibility and balance</p>
+    </div>
+
+    <div class="class-card flexibility">
+      <h3>Pilates</h3>
+      <p>Core strength and posture</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <p>© 2026 FitLife Gym & Fitness Club</p>
+</footer>
+
+<!-- JavaScript file -->
+<script src="script.js"></script>
+</body>
+</html>
